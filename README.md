@@ -1,6 +1,6 @@
 # WTFJS
 
-## 什么事吊鸡丝
+## 什么是吊鸡丝
 
 [![WTFPL 2.0][license-image]][license-url]
 [![NPM version][npm-image]][npm-url]
@@ -20,18 +20,18 @@ WTFJS最初的想法属于[Brian Leroux](https://twitter.com/brianleroux).
 
 ## Node包装手稿
 
-You can install this handbook using `npm`.
-Just run:
+你可以使用`npm`来安装这本手册。
+只要运行:
 
-```
+```bash
 $ npm install -g wtfjs
 ```
 
-You should be able to run `wtfjs` at the command line now.
-This will open the manual in your selected `$PAGER`.
-Otherwise, you may continue reading on here.
+你现在应该可以在命令行运行`wtfjs`。
+这将在您选择的`$PAGER`中打开手册。
+否则，你可以继续在这里阅读。
 
-The source is available here: <https://github.com/denysdovhan/wtfjs>
+来源可在这里找到： <https://github.com/denysdovhan/wtfjs>
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -98,39 +98,42 @@ The source is available here: <https://github.com/denysdovhan/wtfjs>
 
 ## 💪🏻 动机
 
-> Just for fun
+> 只是为了好玩
 >
-> &mdash; _[**“Just for Fun: The Story of an Accidental Revolutionary”**](https://en.wikipedia.org/wiki/Just_for_Fun), Linus Torvalds_
+> &mdash; _[**“只是为了好玩: 一个意外革命家的故事”**](https://en.wikipedia.org/wiki/Just_for_Fun), Linus Torvalds_
 
-The primary goal of this list is to collect some crazy examples and explain how they work, if possible.
-Just because it's fun to learn something that we didn't know before.
+如果可能的话，这个清单的主要目标是收集一些疯狂的例子并解释它们是如何工作的。
+只是因为学习之前我们不知道的东西很有趣。
 
-If you are a beginner, you can use these notes to get a deeper dive into JavaScript.
-I hope these notes will motivate you to spend more time reading the specification.
+如果您是初学者，可以使用这些笔记深入了解JavaScript。
+我希望这些笔记能激励你花更多的时间阅读规范。
 
-If you are a professional developer, you can consider these examples as a great reference for all of the quirks and unexpected edges of our beloved JavaScript.
+如果您是专业开发人员， 您可以将这些示例作为我们心爱的JavaScript的所有怪癖和意想不到的边缘的一个很好的参考。
 
-In any case, just read this.
-You're probably going to find something new.
+无论如何，只要阅读这个。
+你可能会找到新的东西。
 
 ## ✍🏻 符号
 
-**`// ->`** is used to show the result of an expression.
-For example:
+**`// ->`** 用于显示表达式的结果。
+
+例如:
 
 ```js
 1 + 1 // -> 2
 ```
 
-**`// >`** means the result of `console.log` or another output.
-For example:
+**`// >`** 意味着`console.log`或其他输出的结果。
+
+例如:
 
 ```js
 console.log('hello, world!') // > hello, world!
 ```
 
-**`//`** is just a comment used for explanations.
-Example:
+**`//`** 只是用于解释的评论
+
+例:
 
 ```js
 // Assigning a function to foo constant
@@ -141,7 +144,7 @@ const foo = function () {}
 
 ### `[]` 是平等的 `![]`
 
-Array is equal not array:
+数组不等于数组
 
 ```js
 [] == ![] // -> true
@@ -149,11 +152,11 @@ Array is equal not array:
 
 #### 💡 说明:
 
-The abstract equality operator converts both sides to numbers to compare them, and both sides become the number `0` for different reasons.
-Arrays are truthy, so on the right, the opposite of a truthy value is `false`, which is then coerced to `0`.
-On the left, however, an empty array is coerced to a number without becoming a boolean first, and empty arrays are coerced to `0`, despite being truthy.
+抽象相等运算符将双方转换为数字进行比较，双方由于不同的原因成为数字“0”。
+数组是真的, 所以在右边, 与真值相反的是`false`, 然后被强制`0`.
+在左边, 然而, 一个空数组被强制为一个数字，而不是先成为布尔值, 并且空阵列被强制`0`, 尽管是真的.
 
-Here is how this expression simplifies:
+这是这个表达式如何简化
 
 ```js
 +[] == +![]
@@ -162,12 +165,12 @@ Here is how this expression simplifies:
 true
 ```
 
-See also [`[]` is truthy, but not `true`](#-is-truthy-but-not-true).
+也可以看看[`[]` 是真的, 但不是`true`](#-is-truthy-but-not-true).
 
-* [**12.5.9** Logical NOT Operator (`!`)](https://www.ecma-international.org/ecma-262/#sec-logical-not-operator)
-* [**7.2.13** Abstract Equality Comparison](https://www.ecma-international.org/ecma-262/#sec-abstract-equality-comparison)
+* [**12.5.9** 逻辑NOT运算符 (`!`)](https://www.ecma-international.org/ecma-262/#sec-logical-not-operator)
+* [**7.2.13** 抽象的平等比较](https://www.ecma-international.org/ecma-262/#sec-abstract-equality-comparison)
 
-### true is false
+### true 是 false
 
 ```js
 !!'false' ==  !!'true'  // -> true
@@ -176,7 +179,7 @@ See also [`[]` is truthy, but not `true`](#-is-truthy-but-not-true).
 
 #### 💡 说明:
 
-Consider this step-by-step:
+考虑这一步一步：
 
 ```js
 // true is 'truthy' and represented by value 1 (number), 'true' in string form is NaN.
@@ -188,7 +191,7 @@ false == 'false'  // -> false
 !!'true'  // -> true
 ```
 
-* [**7.2.13** Abstract Equality Comparison](https://www.ecma-international.org/ecma-262/#sec-abstract-equality-comparison)
+* [**7.2.13** 抽象平等比较](https://www.ecma-international.org/ecma-262/#sec-abstract-equality-comparison)
 
 ### baNaNa
 
@@ -196,8 +199,8 @@ false == 'false'  // -> false
 'b' + 'a' + + 'a' + 'a'
 ```
 
-This is an old-school joke in JavaScript, but remastered.
-Here's the original one:
+这是JavaScript中的一个老派玩笑，但重新修复。
+这是原来的一个：
 
 ```js
 'foo' + + 'bar' // -> 'fooNaN'
@@ -218,32 +221,25 @@ NaN === NaN // -> false
 
 #### 💡 说明:
 
-The specification strictly defines the logic behind this behavior:
+规范严格定义了这种行为背后的逻辑：
 
-> 1.
-If `Type(x)` is different from `Type(y)`, return **false**.
-> 2.
-If `Type(x)` is Number, then
->     1.
-If `x` is **NaN**, return **false**.
->     2.
-If `y` is **NaN**, return **false**.
->     3.
-… … …
+> 1. If `Type(x)` is different from `Type(y)`, return **false**.
+> 2. If `Type(x)` is Number, then
+>     1. If `x` is **NaN**, return **false**.
+>     2. If `y` is **NaN**, return **false**.
+>     3. … … …
 >
 > &mdash; [**7.2.14** Strict Equality Comparison](https://www.ecma-international.org/ecma-262/#sec-strict-equality-comparison)
 
-Following the definition of `NaN` from the IEEE:
+遵循IEEE的“NaN”定义：
 
-> Four mutually exclusive relations are possible: less than, equal, greater than, and unordered.
-The last case arises when at least one operand is NaN.
-Every NaN shall compare unordered with everything, including itself.
+> 四种相互排斥的关系是可能的: 少于, 等于, 大于，无序.最后一种情况出现在至少一个操作数是NaN的情况下。每个NaN都会将无序与包括它自己在内的所有事物进行比较。
 >
-> &mdash; [“What is the rationale for all comparisons returning false for IEEE754 NaN values?”](https://stackoverflow.com/questions/1565164/1573715#1573715) at StackOverflow
+> &mdash; [“IEEE754 NaN值返回false的所有比较的基本原理是什么？”](https://stackoverflow.com/questions/1565164/1573715#1573715) at StackOverflow
 
 ### 这是一个失败
 
-You would not believe, but …
+你不会相信，但...
 
 ```js
 (![]+[])[+[]]+(![]+[])[+!+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]
@@ -898,7 +894,7 @@ In the example above, `f` function is a tag for template literal.
 Tags before template literal allow you to parse template literals with a function.
 The first argument of a tag function contains an array of string values.
 The remaining arguments are related to the expressions.
-Example:
+例:
 
 ```js
 function template(strings, ...keys) {
@@ -1050,7 +1046,7 @@ That's why we get the string `'[object Object]'`.
 
 ### Destructuring with default values
 
-Consider this example:
+Consider this 例:
 
 ```js
 let x, { x: y = 1 } = { x }; y;
@@ -1253,7 +1249,7 @@ Should be an error, however, we get the string `'object'`.
 #### 💡 说明:
 
 Since ECMAScript 5 era, _keywords_ are allowed as _property names_.
-So think about it as this simple object example:
+So think about it as this simple object 例:
 
 ```js
 const foo = {
@@ -1471,7 +1467,7 @@ Read in-depth explanation for this [here](https://blog.campvanilla.com/javascrip
 ### `Number.toFixed()` display different numbers
 
 `Number.toFixed()` can behave a bit strange in different browsers.
-Check out this example:
+Check out this 例:
 
 ```js
 0.7875.toFixed(3)
