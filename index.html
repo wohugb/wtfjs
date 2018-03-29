@@ -1,0 +1,709 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="很吊的鸡丝">
+      
+      
+      
+        <meta name="author" content="Nosy">
+      
+      
+        <meta name="lang:clipboard.copy" content="复制">
+      
+        <meta name="lang:clipboard.copied" content="已复制">
+      
+        <meta name="lang:search.language" content="jp">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
+      
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
+      
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
+      
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
+      
+      <link rel="shortcut icon" href="./assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.0">
+    
+    
+      
+        <title>吊鸡丝</title>
+      
+    
+    
+      <link rel="stylesheet" href="./assets/stylesheets/application.78aab2dc.css">
+      
+        <link rel="stylesheet" href="./assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="./assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#wtfjs" tabindex="1" class="md-skip">
+        跳转至
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="." title="吊鸡丝" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                吊鸡丝
+              </span>
+              <span class="md-header-nav__topic">
+                首页
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            键入以开始搜索
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/wohugb/wftjs" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      wohugb/wtfjs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="." title="首页" class="md-tabs__link md-tabs__link--active">
+        首页
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="wtfjs/" title="吊鸡丝" class="md-tabs__link">
+          吊鸡丝
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    吊鸡丝
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/wohugb/wftjs" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      wohugb/wtfjs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        首页
+      </label>
+    
+    <a href="." title="首页" class="md-nav__link md-nav__link--active">
+      首页
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="什么是吊鸡丝" class="md-nav__link">
+    什么是吊鸡丝
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#node" title="Node包装手稿" class="md-nav__link">
+    Node包装手稿
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="目录" class="md-nav__link">
+    目录
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="💪🏻 动机" class="md-nav__link">
+    💪🏻 动机
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="✍🏻 符号" class="md-nav__link">
+    ✍🏻 符号
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="其他资源" class="md-nav__link">
+    其他资源
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" title="🎓 证书" class="md-nav__link">
+    🎓 证书
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      吊鸡丝
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        吊鸡丝
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="wtfjs/" title="列表" class="md-nav__link">
+      列表
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="什么是吊鸡丝" class="md-nav__link">
+    什么是吊鸡丝
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#node" title="Node包装手稿" class="md-nav__link">
+    Node包装手稿
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="目录" class="md-nav__link">
+    目录
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="💪🏻 动机" class="md-nav__link">
+    💪🏻 动机
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="✍🏻 符号" class="md-nav__link">
+    ✍🏻 符号
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="其他资源" class="md-nav__link">
+    其他资源
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" title="🎓 证书" class="md-nav__link">
+    🎓 证书
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="wtfjs">WTFJS<a class="headerlink" href="#wtfjs" title="Permanent link">&para;</a></h1>
+<h2 id="_1">什么是吊鸡丝<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><a href="http://www.wtfpl.net"><img alt="WTFPL 2.0" src="https://img.shields.io/badge/License-WTFPL%202.0-lightgrey.svg?style=flat-square" /></a>
+<a href="https://npmjs.org/package/wtfjs"><img alt="NPM version" src="https://img.shields.io/npm/v/wtfjs.svg?style=flat-square" /></a></p>
+<blockquote>
+<p>有趣和棘手的JavaScript示例列表</p>
+</blockquote>
+<p>JavaScript是一门伟大的语言。
+它有一个简单的语法，庞大的生态系统，最重要的是一个伟大的社区。</p>
+<p>与此同时，我们都知道JavaScript是一个非常有趣的语言，它有棘手的部分。
+他们中的一些人可以迅速将我们的日常工作变成地狱，其中一些可以让我们大声笑出声来。</p>
+<p>WTFJS最初的想法属于<a href="https://twitter.com/brianleroux">Brian Leroux</a>.
+这份名单受到了他的演讲<a href="https://www.youtube.com/watch?v=et8xNAc2ic8"><strong> 2012年dotJS上的“WTFJS”</strong></a>的启发:</p>
+<p><a href="https://www.youtube.com/watch?v=et8xNAc2ic8"><img alt="dotJS 2012 - Brian Leroux - WTFJS" src="https://img.youtube.com/vi/et8xNAc2ic8/0.jpg" /></a></p>
+<h2 id="node">Node包装手稿<a class="headerlink" href="#node" title="Permanent link">&para;</a></h2>
+<p>你可以使用<code>npm</code>来安装这本手册。
+只要运行:</p>
+<div class="codehilite"><pre><span></span>$ npm install -g wtfjs
+</pre></div>
+
+<p>你现在应该可以在命令行运行<code>wtfjs</code>。
+这将在您选择的<code>$PAGER</code>中打开手册。
+否则，你可以继续在这里阅读。</p>
+<p>来源可在这里找到： <a href="https://github.com/denysdovhan/wtfjs">https://github.com/denysdovhan/wtfjs</a></p>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+<h2 id="_2">目录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#-motivation">💪🏻 Motivation</a></li>
+<li><a href="#-notation">✍🏻 Notation</a></li>
+<li><a href="#-examples">👀 Examples</a></li>
+<li><a href="#-is-equal-"><code>[]</code> is equal <code>![]</code></a></li>
+<li><a href="#true-is-false">true is false</a></li>
+<li><a href="#banana">baNaNa</a></li>
+<li><a href="#nan-is-not-a-nan"><code>NaN</code> is not a <code>NaN</code></a></li>
+<li><a href="#its-a-fail">It's a fail</a></li>
+<li><a href="#-is-truthy-but-not-true"><code>[]</code> is truthy, but not <code>true</code></a></li>
+<li><a href="#null-is-falsy-but-not-false"><code>null</code> is falsy, but not <code>false</code></a></li>
+<li><a href="#documentall-is-an-object-but-it-is-undefined"><code>document.all</code> is an object, but it is undefined</a></li>
+<li><a href="#minimal-value-is-greater-than-zero">Minimal value is greater than zero</a></li>
+<li><a href="#function-is-not-a-function">function is not a function</a></li>
+<li><a href="#adding-arrays">Adding arrays</a></li>
+<li><a href="#trailing-commas-in-array">Trailing commas in array</a></li>
+<li><a href="#array-equality-is-a-monster">Array equality is a monster</a></li>
+<li><a href="#undefined-and-number"><code>undefined</code> and <code>Number</code></a></li>
+<li><a href="#parseint-is-a-bad-guy"><code>parseInt</code> is a bad guy</a></li>
+<li><a href="#math-with-true-and-false">Math with <code>true</code> and <code>false</code></a></li>
+<li><a href="#html-comments-are-valid-in-javascript">HTML comments are valid in JavaScript</a></li>
+<li><a href="#nan-is-not-a-number"><code>NaN</code> is ~~not~~ a number</a></li>
+<li><a href="#-and-null-are-objects"><code>[]</code> and <code>null</code> are objects</a></li>
+<li><a href="#magically-increasing-numbers">Magically increasing numbers</a></li>
+<li><a href="#precision-of-01--02">Precision of <code>0.1 + 0.2</code></a></li>
+<li><a href="#patching-numbers">Patching numbers</a></li>
+<li><a href="#comparison-of-three-numbers">Comparison of three numbers</a></li>
+<li><a href="#funny-math">Funny math</a></li>
+<li><a href="#addition-of-regexps">Addition of RegExps</a></li>
+<li><a href="#strings-arent-instances-of-string">Strings aren't instances of <code>String</code></a></li>
+<li><a href="#calling-functions-with-backticks">Calling functions with backticks</a></li>
+<li><a href="#call-call-call">Call call call</a></li>
+<li><a href="#a-constructor-property">A <code>constructor</code> property</a></li>
+<li><a href="#object-as-a-key-of-objects-property">Object as a key of object's property</a></li>
+<li><a href="#accessing-prototypes-with-__proto__">Accessing prototypes with <code>__proto__</code></a></li>
+<li><a href="#-object-"><code>`${{Object}}`</code></a></li>
+<li><a href="#destructuring-with-default-values">Destructuring with default values</a></li>
+<li><a href="#dots-and-spreading">Dots and spreading</a></li>
+<li><a href="#labels">Labels</a></li>
+<li><a href="#nested-labels">Nested labels</a></li>
+<li><a href="#insidious-trycatch">Insidious <code>try..catch</code></a></li>
+<li><a href="#is-this-multiple-inheritance">Is this multiple inheritance?</a></li>
+<li><a href="#a-generator-which-yields-itself">A generator which yields itself</a></li>
+<li><a href="#a-class-of-class">A class of class</a></li>
+<li><a href="#non-coercible-objects">Non-coercible objects</a></li>
+<li><a href="#tricky-arrow-functions">Tricky arrow functions</a></li>
+<li><a href="#arguments-and-arrow-functions"><code>arguments</code> and arrow functions</a></li>
+<li><a href="#tricky-return">Tricky return</a></li>
+<li><a href="#accessing-object-properties-with-arrays">Accessing object properties with arrays</a></li>
+<li><a href="#mathmax-less-than-mathmin"><code>Math.max()</code> less than <code>Math.min()</code></a></li>
+<li><a href="#null-and-relational-operators">Null and Relational Operators</a></li>
+<li><a href="#numbertofixed-display-different-numbers"><code>Number.toFixed()</code> display different numbers</a></li>
+<li><a href="#comparing-null-to-0">Comparing <code>null</code> to <code>0</code></a></li>
+<li><a href="#same-variable-redeclaration">Same variable redeclaration</a></li>
+<li><a href="#other-resources">Other resources</a></li>
+<li><a href="#-license">🎓 License</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<h2 id="_3">💪🏻 动机<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>只是为了好玩</p>
+<p>&mdash; <em><a href="https://en.wikipedia.org/wiki/Just_for_Fun"><strong>“只是为了好玩: 一个意外革命家的故事”</strong></a>, Linus Torvalds</em></p>
+</blockquote>
+<p>如果可能的话，这个清单的主要目标是收集一些疯狂的例子并解释它们是如何工作的。
+只是因为学习之前我们不知道的东西很有趣。</p>
+<p>如果您是初学者，可以使用这些笔记深入了解JavaScript。
+我希望这些笔记能激励你花更多的时间阅读规范。</p>
+<p>如果您是专业开发人员， 您可以将这些示例作为我们心爱的JavaScript的所有怪癖和意想不到的边缘的一个很好的参考。</p>
+<p>无论如何，只要阅读这个。
+你可能会找到新的东西。</p>
+<h2 id="_4">✍🏻 符号<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p><strong><code>// -&gt;</code></strong> 用于显示表达式的结果。</p>
+<p>例如:</p>
+<div class="codehilite"><pre><span></span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1">// -&gt; 2</span>
+</pre></div>
+
+<p><strong><code>// &gt;</code></strong> 意味着<code>console.log</code>或其他输出的结果。</p>
+<p>例如:</p>
+<div class="codehilite"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;hello, world!&#39;</span><span class="p">)</span> <span class="c1">// &gt; hello, world!</span>
+</pre></div>
+
+<p><strong><code>//</code></strong> 只是用于解释的评论</p>
+<p>例:</p>
+<div class="codehilite"><pre><span></span><span class="c1">// Assigning a function to foo constant</span>
+<span class="kr">const</span> <span class="nx">foo</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{}</span>
+</pre></div>
+
+<h2 id="_5">其他资源<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="http://wtfjs.com/">wtfjs.com</a> — 一系列非常特殊的违规行为，不一致以及网络语言的简单痛苦不直观的时刻。</li>
+<li><a href="https://www.destroyallsoftware.com/talks/wat">Wat</a> — 来自CodeMash 2012的Gary Bernhardt闪电谈话</li>
+<li><a href="https://www.youtube.com/watch?v=2pL28CcEijU">What the...JavaScript?</a> — Kyle Simpsons谈论Forward 2尝试从JavaScript中“抽出疯狂”。他希望帮助您生成更干净，更优雅，更易读的代码，然后激励人们为开源社区做出贡献。</li>
+</ul>
+<h2 id="_6">🎓 证书<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p><a href="http://www.wtfpl.net"><img alt="CC 4.0" src="https://img.shields.io/badge/License-WTFPL%202.0-lightgrey.svg?style=flat-square" /></a></p>
+<p>&copy; <a href="http://denysdovhan.com">Denys Dovhan</a></p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+        
+          <a href="wtfjs/" title="列表" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前进
+                </span>
+                列表
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            @2018 wohugb.github.io
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="http://wohugb.github.io" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/wohugb" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/wohugb" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/wohugb" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="./assets/javascripts/application.8eb9be28.js"></script>
+      
+        
+        
+          
+          <script src="./assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="./assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="./assets/javascripts/lunr/lunr.jp.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"0.17.3",url:{base:"."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
