@@ -1,0 +1,57 @@
+site_name: 吊鸡丝
+site_description: 很吊的鸡丝
+site_author: Nosy
+
+copyright: '@2018 wohugb.github.io'
+
+repo_name: wohugb/wtfjs
+repo_url: https://github.com/wohugb/wftjs
+edit_uri: ""
+
+theme:
+  name: material
+
+  include_search_page: false
+  search_index_only: true
+
+  language: zh
+  feature:
+    tabs: true
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/images/favicon.png
+  logo:
+    icon: "\uE80C"
+  extra_css: [assets/stylesheets/extra.css]
+extra:
+  search:
+    language: 'jp'
+  social:
+    - type: globe
+      link: http://wohugb.github.io
+    - type: github-alt
+      link: https://github.com/wohugb
+    - type: twitter
+      link: https://twitter.com/wohugb
+    - type: linkedin
+      link: https://linkedin.com/in/wohugb
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: false
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+
+pages:
+  - 首页: index.md
+  - 吊鸡丝:
+    - 列表: wtfjs.md
